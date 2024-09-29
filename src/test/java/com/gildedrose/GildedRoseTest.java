@@ -159,7 +159,7 @@ class GildedRoseTest {
 
 
     @Test
-    public void testUpdateQuality_AgedBrie() {
+    void testUpdateQuality_AgedBrie() {
         Item[] items = new Item[] { new Item("Aged Brie", 10, 20) };
         GildedRose app = new GildedRose(items);
         app.updateQuality();
@@ -169,7 +169,7 @@ class GildedRoseTest {
     }
 
     @Test
-    public void testUpdateQuality_BackstagePasses() {
+    void testUpdateQuality_BackstagePasses() {
         Item[] items = new Item[] {
             new Item("Backstage passes to a TAFKAL80ETC concert", 11, 20),
             new Item("Backstage passes to a TAFKAL80ETC concert", 10, 20),
@@ -186,7 +186,7 @@ class GildedRoseTest {
     }
 
     @Test
-    public void testUpdateQuality_Sulfuras() {
+    void testUpdateQuality_Sulfuras() {
         Item[] items = new Item[] { new Item("Sulfuras, Hand of Ragnaros", 0, 80) };
         GildedRose app = new GildedRose(items);
         app.updateQuality();
@@ -196,7 +196,7 @@ class GildedRoseTest {
     }
 
     @Test
-    public void testUpdateQuality_NormalItem() {
+    void testUpdateQuality_NormalItem() {
         Item[] items = new Item[] { new Item("Normal Item", 10, 20) };
         GildedRose app = new GildedRose(items);
         app.updateQuality();
@@ -206,7 +206,7 @@ class GildedRoseTest {
     }
 
     @Test
-    public void testUpdateQuality_NormalItemAfterExpiration() {
+    void testUpdateQuality_NormalItemAfterExpiration() {
         Item[] items = new Item[] { new Item("Normal Item", 0, 20) };
         GildedRose app = new GildedRose(items);
         app.updateQuality();
@@ -216,7 +216,7 @@ class GildedRoseTest {
     }
 
     @Test
-    public void testUpdateQuality_AgedBrie_MaxQuality() {
+    void testUpdateQuality_AgedBrie_MaxQuality() {
         Item[] items = new Item[] { new Item("Aged Brie", 10, 50) };
         GildedRose app = new GildedRose(items);
         app.updateQuality();
@@ -225,7 +225,7 @@ class GildedRoseTest {
     }
 
     @Test
-    public void testUpdateQuality_BackstagePasses_MaxQuality() {
+    void testUpdateQuality_BackstagePasses_MaxQuality() {
         Item[] items = new Item[] { new Item("Backstage passes to a TAFKAL80ETC concert", 5, 50) };
         GildedRose app = new GildedRose(items);
         app.updateQuality();
@@ -234,7 +234,7 @@ class GildedRoseTest {
     }
 
     @Test
-    public void testUpdateQuality_ExpiredAgedBrie() {
+    void testUpdateQuality_ExpiredAgedBrie() {
         Item[] items = new Item[] { new Item("Aged Brie", 0, 20) };
         GildedRose app = new GildedRose(items);
         app.updateQuality();
@@ -244,7 +244,7 @@ class GildedRoseTest {
     }
 
     @Test
-    public void testUpdateQuality_ExpiredNormalItem() {
+    void testUpdateQuality_ExpiredNormalItem() {
         Item[] items = new Item[] { new Item("Normal Item", -1, 10) };
         GildedRose app = new GildedRose(items);
         app.updateQuality();
@@ -253,7 +253,7 @@ class GildedRoseTest {
     }
 
     @Test
-    public void testUpdateQuality_ExpiredBackstagePasses() {
+    void testUpdateQuality_ExpiredBackstagePasses() {
         Item[] items = new Item[] { new Item("Backstage passes to a TAFKAL80ETC concert", -1, 10) };
         GildedRose app = new GildedRose(items);
         app.updateQuality();
